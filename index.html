@@ -8,20 +8,23 @@
   
   
   <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="styles.css" media="all">
+  <link rel="stylesheet" type="text/css" href="style.css" media="all">
   
 </head>
 <body>
   
-<div id="symbol_map"></div>
+<div id="symbol_map">
 
-<script type="text/javascript">
+  <script type="text/javascript">
+    var spec2 = "crash.vg.json";
+    vegaEmbed('#symbol_map', spec2).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
+  
+</div>
 
-  var spec2 = "crash.vg.json";
-  vegaEmbed('#symbol_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
+
 
 </body>
 </html>

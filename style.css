@@ -1,8 +1,7 @@
 #symbol_map {
-	top:100px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
+	top:50px;
+	width: 100%;
+	text-align: center;
 	/*height: 1000px;
 	width: 800px;*/
 }
